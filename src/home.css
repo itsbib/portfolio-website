@@ -1,0 +1,44 @@
+.mainContainer {
+  display: relative;
+  background-color: #f5f5f5;
+}
+
+.headerText {
+  margin-top: -100px;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 100px;
+  margin-left: 20px;
+  letter-spacing: 0px;
+}
+
+.headerText1 {
+  letter-spacing: 2px;
+  font-size: 70px;
+  color: #fff;
+}
+
+.headerText2 {
+  color: #000;
+}
+
+.rectangle {
+  display: inline-block;
+  width: 230px;
+  height: 250px;
+  background-color: #2b5557;
+}
+
+.ctaButton {
+  background-color: #2b5557;
+  color: #ffffff;
+  padding: 10px 20px 10px 20px;
+  border-radius: 13px;
+  font-size: 20px;
+  border: none;
+  margin-left: 20px;
+}
+
+.ctaButton:hover {
+  background-color: #000;
+}
