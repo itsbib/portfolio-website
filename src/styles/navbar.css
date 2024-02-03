@@ -11,6 +11,7 @@
 .navbar-menu li {
   margin-left: 50px;
   margin-right: 20px;
+  cursor: pointer;
 }
 
 .navbar-menu a {
