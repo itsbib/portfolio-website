@@ -1,6 +1,5 @@
 import "../styles/navbar.css";
 import toggleButton from "../utils/toggleButton";
-import Services from "./Services";
 import { Link, animateScroll as scroll } from "react-scroll";
 
 const Navbar = () => {
@@ -62,13 +61,13 @@ const Navbar = () => {
           <li>
             <Link
               activeClass="active"
-              to="Contacts"
+              to="Contact"
               spy={true}
               smooth={true}
               offset={-100}
               duration={500}
             >
-              Contacts
+              Contact
             </Link>
           </li>
         </ul>

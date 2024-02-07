@@ -42,5 +42,6 @@
 }
 
 .ctaButton:hover {
-  background-color: #000;
+  cursor: pointer;
+  background-color: #102f31;
 }
