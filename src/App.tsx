@@ -5,8 +5,15 @@ import Navbar from "./components/Navbar";
 import Services from "./components/Services";
 import Portfolio from "./components/Portfolio";
 import Testimonials from "./components/Testimonials";
+import Contact from "./components/Contact";
 
 export default function App() {
+  const handleButtonClick = () => {
+    const contactSection = document.getElementById("Contact");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <>
       <HelmetProvider>
@@ -25,11 +32,16 @@ export default function App() {
           <br />
           Full Stack Developer
         </h1>
-        <button className="ctaButton">Contact Me</button>
+        <a>
+          <button className="ctaButton" onClick={handleButtonClick}>
+            Contact
+          </button>
+        </a>
       </div>
       <Services />
       <Portfolio />
       <Testimonials />
+      <Contact />
     </>
   );
 }

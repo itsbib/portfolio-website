@@ -53,16 +53,14 @@ const Services = () => {
   );
 
   return (
-    <div id="Services">
-      <div className="services">
-        <h1 className="servicesHeader">My Services !</h1>
-        <div className="serviceCardSection">
-          {services.map((service) => (
-            <div className="servicesCard">
-              <ServicesCard {...service} />
-            </div>
-          ))}
-        </div>
+    <div id="Services" className="services">
+      <h1 className="servicesHeader">My Services !</h1>
+      <div className="serviceCardSection">
+        {services.map((service) => (
+          <div className="servicesCard">
+            <ServicesCard {...service} />
+          </div>
+        ))}
       </div>
     </div>
   );

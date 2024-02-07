@@ -3,4 +3,5 @@ export interface IPortfolioDetails {
   title: string;
   depLink: string;
   githubLink: string;
+  description: string;
 }
