@@ -7,6 +7,24 @@ import Portfolio from "./components/Portfolio";
 import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
 
+import { ISocialLinks } from "./types/interfaces/socialLinks.interface";
+import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { Link } from "react-scroll";
+
+const socialLinks: ISocialLinks[] = [
+  {
+    logo: <FaLinkedinIn />,
+    link: "https://www.linkedin.com/in/bibekkarkiii/",
+  },
+  {
+    logo: <FaGithub />,
+    link: "https://github.com/itsbib",
+  },
+  {
+    logo: <FaInstagram />,
+    link: "https://www.instagram.com/bibekkarkiii/",
+  },
+];
 export default function App() {
   const handleButtonClick = () => {
     const contactSection = document.getElementById("Contact");
@@ -22,7 +40,8 @@ export default function App() {
         </Helmet>
       </HelmetProvider>
       <div className="mainContainer">
-        <div className="rectangle">
+        <div className="rectangle"></div>
+        <div className="navbarStyle">
           <Navbar />
         </div>
         <h1 className="headerText">
@@ -32,9 +51,21 @@ export default function App() {
           <br />
           Full Stack Developer
         </h1>
+        <div className="socialLinks">
+          {socialLinks.map((data) => (
+            <a
+              href={data.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="socialLink"
+            >
+              {data.logo}
+            </a>
+          ))}
+        </div>
         <a>
           <button className="ctaButton" onClick={handleButtonClick}>
-            Contact
+            Contact Me
           </button>
         </a>
       </div>

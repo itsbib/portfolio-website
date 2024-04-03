@@ -10,35 +10,27 @@ import { IServicesDetails } from "../types/interfaces/services.interface";
 
 const services: IServicesDetails[] = [
   {
-    media: <FontAwesomeIcon icon={faCode} />,
-    title: "Back-End Development",
+    media: <FontAwesomeIcon icon={faLaptopCode} />,
+    title: "Full Stack Development",
     desc: "Transforming concepts into functional back-end systems. I specialize in server-side programming, database management, and ensuring seamless communication between the server and the front-end.",
   },
-  {
-    media: <FontAwesomeIcon icon={faLaptopCode} />,
-    title: "Front-End Development",
-    desc: "Crafting engaging and responsive user interfaces. I focus on bringing designs to life through HTML, CSS, and TypeScript, creating visually appealing and interactive experiences that users love.",
-  },
+
   {
     media: <FontAwesomeIcon icon={faCode} />,
     title: "UI/UX Design",
     desc: "Shaping user experiences through thoughtful design. I specialize in creating intuitive user interfaces, enhancing usability, and focusing on the overall user journey to optimize digital interactions.",
   },
-  {
-    media: <FaNetworkWired />,
-    title: "Networking",
-    desc: "Crafting robust connections for real-world impact. From local setups to the cloud, I optimize for seamless, secure, and scalable communication. Connect, collaborate, and stay ahead in the interconnected landscape.",
-  },
+
   {
     media: <SiWeb3Dotjs />,
     title: "Web3 Development",
     desc: "Pioneering the future of the web. I specialize in blockchain technology, smart contracts, and decentralized applications (DApps). Building innovative solutions that leverage the power of decentralized networks for a more secure and transparent digital environment.",
   },
-  {
-    media: <GrAnnounce />,
-    title: "Digital Marketing",
-    desc: "Elevating your online presence and engagement. My digital marketing expertise includes strategic planning, social media management, SEO optimization, and data-driven campaigns to help you reach and connect with your target audience.",
-  },
+  // {
+  //   media: <GrAnnounce />,
+  //   title: "Digital Marketing",
+  //   desc: "Elevating your online presence and engagement. My digital marketing expertise includes strategic planning, social media management, SEO optimization, and data-driven campaigns to help you reach and connect with your target audience.",
+  // },
 ];
 
 const Services = () => {

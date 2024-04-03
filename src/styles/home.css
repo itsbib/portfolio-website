@@ -1,10 +1,13 @@
 .mainContainer {
   display: relative;
   background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
 }
 
 .headerText {
-  margin-top: -100px;
+  position: relative;
+  margin-top: 90px;
   font-size: 60px;
   font-weight: 600;
   line-height: 100px;
@@ -23,10 +26,15 @@
 }
 
 .rectangle {
-  display: inline-block;
+  position: absolute;
   width: 230px;
   height: 250px;
   background-color: #2b5557;
+  margin-top: none;
+}
+
+.navbarStyle {
+  position: relative;
 }
 
 .ctaButton {
@@ -39,9 +47,24 @@
   border: none;
   margin-left: 20px;
   margin-bottom: 50px;
+  margin-top: 20px;
 }
 
 .ctaButton:hover {
   cursor: pointer;
   background-color: #102f31;
+}
+
+.socialLinks {
+  margin: 20px;
+}
+
+.socialLink {
+  background-color: #2b5557;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 50%;
+  margin-right: 10px;
 }

@@ -1,12 +1,11 @@
 .navbar {
   padding: 10px 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 .navbar-menu {
   list-style: none;
   display: flex;
-  margin-left: 300px;
 }
 .navbar-menu li {
   margin-left: 50px;
@@ -17,14 +16,17 @@
 .navbar-menu a {
   color: #000;
   text-decoration: none;
-  font-weight: 600;
-  font-size: 16px;
+  font-weight: 500;
+  font-size: 18px;
 }
 
 .navbar-menu a:hover {
   color: #2b5557;
 }
-@media (max-width: 910px) {
+.navbar-toggle {
+  display: none;
+}
+@media (max-width: 970px) {
   .navbar-menu {
     display: none;
     flex-direction: column;
@@ -50,4 +52,11 @@
     font-size: 20px;
     cursor: pointer;
   }
+}
+
+.contactButton {
+  background-color: #2b5557;
+  color: #ffffff !important;
+  padding: 10px 20px 10px 20px;
+  border-radius: 20px 0px 20px 20px;
 }
