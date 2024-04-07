@@ -1,1 +1,3 @@
-const AboutMe = () => {};
+const AboutMe = () => {
+  return <div></div>;
+};
