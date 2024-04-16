@@ -9,7 +9,7 @@ import Contact from "./components/Contact";
 
 import { ISocialLinks } from "./types/interfaces/socialLinks.interface";
 import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
-import { Link } from "react-scroll";
+import SkillsSphere from "./components/SkillsSphere";
 
 const socialLinks: ISocialLinks[] = [
   {
@@ -39,35 +39,47 @@ export default function App() {
           <title>Bibek Karki - Web Developer</title>
         </Helmet>
       </HelmetProvider>
+
+      <div className="navbarStyle">
+        <Navbar />
+      </div>
       <div className="mainContainer">
-        <div className="rectangle"></div>
-        <div className="navbarStyle">
-          <Navbar />
+        <div className="contentContainer">
+          <h1 className="headerText">
+            Hi There,
+            <br />
+            I'm Bibek Karki
+            <br />
+            <div className="subHeader">
+              <span className="subHeader1">Full Stack Developer </span>
+              <span className="subHeader2">
+                with a passion for creating impactful
+                <br /> and scalable web apps.
+              </span>
+            </div>
+          </h1>
+          <a>
+            <button className="ctaButton" onClick={handleButtonClick}>
+              Contact Me
+            </button>
+          </a>
+          <div className="socialLinks">
+            {socialLinks.map((data) => (
+              <a
+                href={data.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="socialLink"
+              >
+                {data.logo}
+              </a>
+            ))}
+          </div>
         </div>
-        <h1 className="headerText">
-          <span className="headerText1">
-            Bibek <span className="headerText2">Karki</span>
-          </span>{" "}
-          <br />
-          Full Stack Developer
-        </h1>
-        <div className="socialLinks">
-          {socialLinks.map((data) => (
-            <a
-              href={data.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="socialLink"
-            >
-              {data.logo}
-            </a>
-          ))}
+
+        <div className="skillsSphere">
+          <SkillsSphere />
         </div>
-        <a>
-          <button className="ctaButton" onClick={handleButtonClick}>
-            Contact Me
-          </button>
-        </a>
       </div>
       <Services />
       <Portfolio />

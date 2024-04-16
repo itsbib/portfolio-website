@@ -27,7 +27,7 @@ const portfolio: IPortfolioDetails[] = [
   },
   {
     media: codeStormImage,
-    title: "Code Storm",
+    title: "Nebula Care",
     depLink: "https://code-storm.vercel.app/",
     githubLink: "https://github.com/samirkhanalofficial/CodeStorm",
     description:
@@ -61,7 +61,7 @@ export default function Portfolio() {
       <h1 className="portfolioCardTitle">{portfolios.title}</h1>
       <div className="portfolioCardDesc">
         <body className="portfolioDesc">{portfolios.description}</body>
-        <div className="portfolioButtons">
+        {/* <div className="portfolioButtons">
           <a
             href={portfolios.githubLink}
             target="_blank"
@@ -74,16 +74,16 @@ export default function Portfolio() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="portfolioButton">Deploy</button>
+            <button className="portfolioButton">Website</button>
           </a>
-        </div>
+        </div> */}
       </div>
     </>
   );
 
   return (
     <div id="Portfolio" className="portfolio">
-      <h1 className="portfolioHeader">Projects</h1>
+      <h1 className="portfolioHeader">My Works</h1>
       <div className="portfolioCardSection">
         <FontAwesomeIcon
           className="arrowIcon"

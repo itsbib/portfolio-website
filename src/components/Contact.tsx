@@ -1,13 +1,15 @@
 import "../styles/contact.css";
 
+import { IoIosSend } from "react-icons/io";
+
 export default function Contact() {
   return (
     <>
-      <h1 id="Contact" className="contactHeader">
-        Get in touch.
-      </h1>
       <div className="contact">
         <div className="contactSection">
+          <h1 id="Contact" className="contactHeader">
+            Get in touch.
+          </h1>
           <form>
             <div className="section1">
               <div className="formSection">
@@ -27,7 +29,12 @@ export default function Contact() {
                 style={{ height: "200px" }}
               />
             </div>
-            <button className="ctaButton">SUBMIT MESSAGE</button>
+            <button className="sendButton">
+              SEND
+              <span className="sendButtonIcon">
+                <IoIosSend />
+              </span>
+            </button>
           </form>
         </div>
       </div>

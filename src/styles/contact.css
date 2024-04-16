@@ -1,7 +1,7 @@
 .contact {
   display: flex;
-  flex-direction: row-reverse;
-  margin-right: 20px;
+  flex-direction: column;
+  margin-right: 80px;
 }
 
 input[type="text"],
@@ -18,9 +18,14 @@ textarea {
 
 .contactSection {
   display: flex;
-  flex-direction: row;
-  margin-left: 20px;
+  flex-direction: column;
+  align-self: flex-end;
 }
+
+.contactHeader {
+  font-size: 36px;
+}
+
 .section1 {
   display: flex;
 }
@@ -29,9 +34,22 @@ textarea {
   margin: 10px;
 }
 
-.contactHeader {
-  font-size: 46px;
+.sendButton {
+  background-color: #546fff;
+  color: #ffffff;
+  padding: 10px 20px 10px 20px;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10px;
   display: flex;
-  justify-content: flex-end;
-  margin-right: 355px;
+  align-items: center;
+}
+
+.sendButtonIcon {
+  margin-left: 10px;
+  font-size: 20px;
 }
