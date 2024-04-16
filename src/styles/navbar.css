@@ -1,7 +1,5 @@
 .navbar {
   padding: 10px 20px;
-  display: flex;
-  justify-content: flex-end;
 }
 .navbar-menu {
   list-style: none;
@@ -17,11 +15,11 @@
   color: #000;
   text-decoration: none;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .navbar-menu a:hover {
-  color: #2b5557;
+  color: #546fff;
 }
 .navbar-toggle {
   display: none;
@@ -52,11 +50,4 @@
     font-size: 20px;
     cursor: pointer;
   }
-}
-
-.contactButton {
-  background-color: #2b5557;
-  color: #ffffff !important;
-  padding: 10px 20px 10px 20px;
-  border-radius: 20px 0px 20px 20px;
 }

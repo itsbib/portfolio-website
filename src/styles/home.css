@@ -1,52 +1,52 @@
 .mainContainer {
-  display: relative;
-  background-color: #f5f5f5;
+  display: flex;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
 }
 
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
 .headerText {
-  position: relative;
-  margin-top: 90px;
-  font-size: 60px;
+  /* position: relative; */
+  margin-top: 80px;
+  font-size: 45px;
   font-weight: 600;
-  line-height: 100px;
-  margin-left: 20px;
+  margin-left: 80px;
   letter-spacing: 0px;
 }
 
-.headerText1 {
-  letter-spacing: 2px;
-  font-size: 70px;
-  color: #fff;
-}
-
-.headerText2 {
+.subHeader {
   color: #000;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 20px;
 }
 
-.rectangle {
-  position: absolute;
-  width: 230px;
-  height: 250px;
-  background-color: #2b5557;
-  margin-top: none;
+.subHeader1 {
+  color: #ff5f15;
 }
 
 .navbarStyle {
-  position: relative;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .ctaButton {
-  background-color: #2b5557;
+  background-color: #546fff;
   color: #ffffff;
   padding: 10px 20px 10px 20px;
-  border-radius: 13px;
+  border-radius: 20px;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   border: none;
-  margin-left: 20px;
-  margin-bottom: 50px;
+  margin-left: 80px;
+  margin-bottom: 20px;
   margin-top: 20px;
 }
 
@@ -56,15 +56,23 @@
 }
 
 .socialLinks {
-  margin: 20px;
+  margin-left: 80px;
 }
 
 .socialLink {
-  background-color: #2b5557;
-  color: #fff;
+  color: #000;
   display: inline-flex;
   align-items: center;
   padding: 10px;
   border-radius: 50%;
   margin-right: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.skillsSphere {
+  align-self: flex-end;
+  margin-top: 80px;
+  margin-right: 80px;
 }
