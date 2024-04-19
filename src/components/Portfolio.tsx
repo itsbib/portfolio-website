@@ -6,7 +6,9 @@ import findMyItemImage from "../assets/FindMyItem.png";
 import codeStormImage from "../assets/CodeStorm.png";
 import connectRentImage from "../assets/CodeStorm.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faAnglesLeft, faAnglesRight } from "@fortawesome/free-solid-svg-icons";
+import { IoIosGlobe } from "react-icons/io";
+import { FaGithub } from "react-icons/fa";
 
 const portfolio: IPortfolioDetails[] = [
   {
@@ -14,21 +16,21 @@ const portfolio: IPortfolioDetails[] = [
     title: "Army Inventory",
     description:
       "An inventory management app for managing sales and manage reports.",
-    depLink: "",
+    websiteLink: "",
     githubLink: "https://github.com/samirkhanalofficial/army_inventory",
   },
   {
     media: findMyItemImage,
     title: "Find My Item",
-    depLink: "https://findmyitem.samirk.com.np/",
+    websiteLink: "https://findmyitem.samirk.com.np/",
     githubLink: "https://github.com/samirkhanalofficial/findmyitem",
     description:
-      "Platform for listing and searching lost&found items intending to return the items to their owners.",
+      "Platform for listing and searching lost & found items intending to return the items to their owners.",
   },
   {
     media: codeStormImage,
     title: "Nebula Care",
-    depLink: "https://code-storm.vercel.app/",
+    websiteLink: "https://code-storm.vercel.app/",
     githubLink: "https://github.com/samirkhanalofficial/CodeStorm",
     description:
       "App addressingn mental health of people which provides therapist's booking and video call sessions with chat feature.",
@@ -36,7 +38,7 @@ const portfolio: IPortfolioDetails[] = [
   {
     media: connectRentImage,
     title: "Connect Rent",
-    depLink: "",
+    websiteLink: "",
     githubLink: "https://github.com/itsbib/connect-rent",
     description:
       "Property renting platform that uses blockchain for smart contract that assures security.",
@@ -57,27 +59,27 @@ export default function Portfolio() {
 
   const PortfolioCard = (portfolios: IPortfolioDetails) => (
     <>
-      <img className="portfolioCardImage" src={portfolios.media} />
-      <h1 className="portfolioCardTitle">{portfolios.title}</h1>
-      <div className="portfolioCardDesc">
-        <body className="portfolioDesc">{portfolios.description}</body>
-        {/* <div className="portfolioButtons">
-          <a
-            href={portfolios.githubLink}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <button className="portfolioButton">Github</button>
-          </a>
-          <a
-            href={portfolios.depLink}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <button className="portfolioButton">Website</button>
-          </a>
-        </div> */}
+      <img className="portfolioCardImage" src={portfolios.media} alt="" />
+      <div className="portfolioCardTiltleSection">
+        <h1 className="portfolioCardTitle">{portfolios.title}</h1>
+        <a
+          className="portfolioCardIcons"
+          href={portfolios.websiteLink}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <IoIosGlobe />
+        </a>
+        <a
+          className="portfolioCardIcons"
+          href={portfolios.githubLink}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaGithub />
+        </a>
       </div>
+      <div className="portfolioCardDesc">{portfolios.description}</div>
     </>
   );
 
@@ -87,7 +89,7 @@ export default function Portfolio() {
       <div className="portfolioCardSection">
         <FontAwesomeIcon
           className="arrowIcon"
-          icon={faArrowLeft}
+          icon={faAnglesLeft}
           onClick={handlePrev}
           aria-disabled={pointer === 0}
         />
@@ -100,7 +102,7 @@ export default function Portfolio() {
         </div>
         <FontAwesomeIcon
           className="arrowIcon"
-          icon={faArrowRight}
+          icon={faAnglesRight}
           onClick={handleNext}
           aria-disabled={pointer === portfolio.length - 3}
         />{" "}

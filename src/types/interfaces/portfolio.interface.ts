@@ -1,7 +1,7 @@
 export interface IPortfolioDetails {
   media: string;
   title: string;
-  depLink: string;
+  websiteLink: string;
   githubLink: string;
   description: string;
 }

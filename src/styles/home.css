@@ -13,9 +13,8 @@
 }
 
 .headerText {
-  /* position: relative; */
   margin-top: 80px;
-  font-size: 45px;
+  font-size: 50px;
   font-weight: 600;
   margin-left: 80px;
   letter-spacing: 0px;
@@ -23,7 +22,7 @@
 
 .subHeader {
   color: #000;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
   margin-top: 20px;
 }
@@ -38,11 +37,11 @@
 }
 
 .ctaButton {
-  background-color: #546fff;
+  background-color: #ff5f15;
   color: #ffffff;
   padding: 10px 20px 10px 20px;
   border-radius: 20px;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
   border: none;
   margin-left: 80px;
@@ -52,7 +51,8 @@
 
 .ctaButton:hover {
   cursor: pointer;
-  background-color: #102f31;
+  background-color: #fa7c41;
+  color: #000;
 }
 
 .socialLinks {
@@ -72,7 +72,38 @@
 }
 
 .skillsSphere {
-  align-self: flex-end;
-  margin-top: 80px;
-  margin-right: 80px;
+  position: absolute;
+  top: 120px;
+  right: 80px;
+  left: auto;
+  margin: 0 auto;
+}
+.testimonialsAndContacts {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+@media (max-width: 970px) {
+  .mainContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .skillsSphere {
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    right: auto;
+    left: auto;
+    opacity: 50%;
+  }
+
+  .contentContainer {
+    z-index: 1;
+  }
+
+  .testimonialsAndContacts {
+    flex-direction: column;
+  }
 }

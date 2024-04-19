@@ -24,7 +24,7 @@ const SkillsSphere: React.FC = () => {
       "WEB3",
     ];
 
-    const tagCloud = new TagCloud(".Sphere", Texts, {
+    new TagCloud(".Sphere", Texts, {
       radius: 200,
 
       maxSpeed: "normal",

@@ -10,6 +10,7 @@ import Contact from "./components/Contact";
 import { ISocialLinks } from "./types/interfaces/socialLinks.interface";
 import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import SkillsSphere from "./components/SkillsSphere";
+import { Link } from "react-scroll";
 
 const socialLinks: ISocialLinks[] = [
   {
@@ -58,11 +59,18 @@ export default function App() {
               </span>
             </div>
           </h1>
-          <a>
+          <Link
+            activeClass="active"
+            to="Contact"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+          >
             <button className="ctaButton" onClick={handleButtonClick}>
               Contact Me
             </button>
-          </a>
+          </Link>
           <div className="socialLinks">
             {socialLinks.map((data) => (
               <a
@@ -83,8 +91,10 @@ export default function App() {
       </div>
       <Services />
       <Portfolio />
-      <Testimonials />
-      <Contact />
+      <div className="testimonialsAndContacts">
+        <Testimonials />
+        <Contact />
+      </div>
     </>
   );
 }
