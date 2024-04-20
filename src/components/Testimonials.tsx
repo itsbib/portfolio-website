@@ -30,28 +30,25 @@ const testimonialStats: ITestimonialsStats[] = [
 
 const reviewsDetails: IReviewsDetails[] = [
   {
-    reviewerName: "Bibek Karki1",
-    reviewerCategory: "Web Developer",
-    reviewDesc:
-      "You're doing an amazing job. dfaslf fdasfjaslfd asldfj daslkfa sjdlfk asj fjsdlkfsj fd",
+    reviewerName: "GUY 1",
+    reviewerCategory: "Nothing",
+    reviewDesc: "K xa keta keti ho sanchai xau? Khana khayeu?",
   },
   {
-    reviewerName: "Bibek Karki2",
-    reviewerCategory: "Web Developer",
-    reviewDesc:
-      "You're doing an amazing job. dfaslf fdasfjaslfd asldfj daslkfa sjdlfk asj fjsdlkfsj fd",
+    reviewerName: "No. 2",
+    reviewerCategory: "Influencer",
+    reviewDesc: "jau padha, ramro marks lyau, back paper nalagau, tei ho bye.",
   },
   {
-    reviewerName: "Bibek Karki3",
-    reviewerCategory: "Web Developer",
-    reviewDesc:
-      "You're doing an amazing job. dfaslf fdasfjaslfd asldfj daslkfa sjdlfk asj fjsdlkfsj fd",
+    reviewerName: "Depressed Guy",
+    reviewerCategory: "berojgar",
+    reviewDesc: "Hell nah, I can't say nothing, I'm an introvert.",
   },
   {
-    reviewerName: "Bibek Karki4",
-    reviewerCategory: "Web Developer",
+    reviewerName: "Test",
+    reviewerCategory: "test",
     reviewDesc:
-      "You're doing an amazing job. dfaslf fdasfjaslfd asldfj daslkfa sjdlfk asj fjsdlkfsj fd",
+      " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem temporibus neque, accusantium totam optio qui ullam voluptate cum deleniti distinctio similique numquam tempora necessitatibus quae at voluptatum sed! Error, soluta?",
   },
 ];
 
