@@ -1,6 +1,8 @@
 .contact {
   display: flex;
   flex-direction: column;
+  align-content: flex-end;
+  margin-top: 120px;
   margin-right: 80px;
 }
 
@@ -20,9 +22,11 @@ textarea {
   display: flex;
   flex-direction: column;
   align-self: flex-end;
+  margin-left: 20px;
 }
 
 .contactHeader {
+  margin-top: 40px;
   font-size: 36px;
 }
 
@@ -35,7 +39,7 @@ textarea {
 }
 
 .sendButton {
-  background-color: #546fff;
+  background-color: #ff5f15;
   color: #ffffff;
   padding: 10px 20px 10px 20px;
   border-radius: 20px;
@@ -52,4 +56,12 @@ textarea {
 .sendButtonIcon {
   margin-left: 10px;
   font-size: 20px;
+}
+
+@media (max-width: 970px) {
+  .contact {
+    align-content: flex-start;
+    margin-left: 60px;
+    margin-right: auto;
+  }
 }

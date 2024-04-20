@@ -1,8 +1,14 @@
-.portfolioHeader {
-  font-size: 36px;
+.portfolio {
   display: flex;
-  justify-content: center;
-  margin-top: 200px;
+  flex-direction: column;
+}
+
+.portfolioHeader {
+  display: flex;
+  align-self: center;
+  font-size: 36px;
+  margin-top: 120px;
+  margin-bottom: 80px;
 }
 
 .portfolioCardSection {
@@ -10,18 +16,19 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin: 100px;
 }
 .portfolioCards {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .portfolioCard {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   max-width: 400px;
   margin: 20px;
+  padding: 10px;
   border: 1px solid #d9d9d9;
   box-shadow: 5px 7px 20px 0px rgba(0, 0, 0, 0.12);
   border-radius: 20px;
@@ -29,55 +36,53 @@
 
 .portfolioCardImage {
   margin: 0px;
-  width: 400px;
+  max-width: 400px;
   height: auto;
+  width: 100%;
   max-height: 205px;
+}
+
+.portfolioCardTiltleSection {
+  display: flex;
+  align-items: center;
+  color: #000;
 }
 
 .portfolioCardTitle {
   font-size: 28px;
   margin-left: 20px;
+  margin-right: auto;
+}
+.portfolioCardIcons {
+  display: flex;
+  align-items: center;
+  color: #000;
+  font-size: 24px;
+  margin-right: 20px;
 }
 .portfolioCardDesc {
   font-size: 16px;
+  color: #585858;
   display: flex;
-  flex-direction: column;
+  flex-grow: 1;
   margin: 20px;
-}
-.portfolioButtons {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.portfolioButton {
-  background-color: #2b5557;
-  color: #ffffff;
-  padding: 10px 20px 10px 20px;
-  border-radius: 10px;
-  font-size: 16px;
-  font-weight: 600;
-  border: none;
-  margin-right: 20px;
-  margin-top: 20px;
-}
-
-.portfolioButton:hover {
-  cursor: pointer;
-  background-color: #102f31;
 }
 
 .arrowIcon {
-  font-size: 10px !important;
-  color: #fff;
+  color: #000;
   border-radius: 50%;
   padding: 10px;
-  width: 30px;
-  height: 30px;
-  border: 1 px solid;
-  background-color: #102f31;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #000;
 }
 
 .arrowIcon:hover {
   cursor: pointer;
+}
+
+@media (max-width: 923px) {
+  .arrowIcon {
+    display: none;
+  }
 }

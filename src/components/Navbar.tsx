@@ -58,7 +58,7 @@ const Navbar = () => {
               Testimonials
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link
               activeClass="active"
               to="Contact"
@@ -70,7 +70,7 @@ const Navbar = () => {
             >
               Contact
             </Link>
-          </li>
+          </li> */}
         </ul>
       </nav>
       {toggleButton}
