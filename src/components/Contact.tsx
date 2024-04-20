@@ -29,12 +29,14 @@ export default function Contact() {
                 style={{ height: "200px" }}
               />
             </div>
-            <button className="sendButton">
-              SEND
-              <span className="sendButtonIcon">
-                <IoIosSend />
-              </span>
-            </button>
+            <div className="sendButtons">
+              <button className="sendButton">
+                SEND
+                <span className="sendButtonIcon">
+                  <IoIosSend />
+                </span>
+              </button>
+            </div>
           </form>
         </div>
       </div>

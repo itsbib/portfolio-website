@@ -16,7 +16,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 100px;
+  margin-top: 80px;
+  margin-bottom: 50px;
 }
 
 .servicesCard {
@@ -26,6 +27,7 @@
   padding: 30px;
   width: 400px;
   height: 250px;
+  margin: 0px;
 }
 .servicesCard:hover {
   border: 1px solid #d9d9d9;
@@ -57,7 +59,5 @@
   margin-top: auto;
   margin-bottom: auto;
   line-height: 20px;
-}
-
-@media (max-width: 970px) {
+  text-align: justify;
 }

@@ -107,3 +107,21 @@
     flex-direction: column;
   }
 }
+
+@media (max-width: 550px) {
+  .mainContainer {
+    flex-direction: column;
+  }
+
+  .headerText {
+    margin-left: 30px;
+  }
+
+  .ctaButton {
+    margin-left: 30px;
+  }
+
+  .socialLinks {
+    margin-left: 30px;
+  }
+}
