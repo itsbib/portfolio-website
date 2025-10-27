@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 
+// eslint-disable-next-line @typescript-eslint/no-require-imports
 const TagCloud = require("TagCloud");
 
 interface SkillSphereProps {
@@ -10,6 +11,7 @@ interface SkillSphereProps {
 
 const SkillSphere: React.FC<SkillSphereProps> = ({ radius }) => {
   const sphereRef = useRef<HTMLDivElement>(null);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const tagCloudInstanceRef = useRef<any>(null);
   const [calculatedRadius, setCalculatedRadius] = useState(radius ?? 200);
 

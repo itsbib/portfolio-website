@@ -9,8 +9,8 @@ export default function Contact() {
     <div>
       <h2 className="font-semibold">Contact</h2>
       <p className="subtext my-1">
-        I'm always looking to collaborate on interesting projects with great
-        people. Need a hand? I got two! :D
+        {`I'm always looking to collaborate on interesting projects with great
+        people. Need a hand? I got two! :D`}
       </p>
 
       <div className="flex gap-6 my-10">
@@ -38,8 +38,8 @@ export default function Contact() {
         <div className="mb-7">
           <h3>Send a message</h3>
           <p className="subtext">
-            Fill out the form below and I'll get back to you as soon as
-            possible.
+            {`Fill out the form below and I'll get back to you as soon as
+            possible.`}
           </p>
         </div>
         <ContactForm />

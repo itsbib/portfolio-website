@@ -17,7 +17,7 @@ export default function Home() {
           <p className="opacity-70">Developer & Designer</p>
 
           <p className="my-10">
-            I'm a full stack web & app developer who <br /> enjoys building
+            I&apos;m a full stack web & app developer who <br /> enjoys building
             applications and exploring new technologies. <br /> I believe in
             simplicity & usability.
           </p>

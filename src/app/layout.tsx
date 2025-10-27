@@ -12,6 +12,9 @@ const jetBrains = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Bibek Karki",
   description: "Bibek Karki",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({

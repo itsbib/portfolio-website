@@ -1,6 +1,6 @@
 "use client";
 
-import { blogs, IBlogs } from "@/app/creations/page";
+import { blogs, IBlogs } from "@/types/blog";
 import { useRouter } from "next/navigation";
 
 export default function Thoughts() {
