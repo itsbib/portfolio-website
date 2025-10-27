@@ -1,4 +1,5 @@
-import { BlogContentBlock } from "@/app/creations/page";
+import { BlogContentBlock } from "@/types/blog";
+import Image from "next/image";
 
 export default function BlogContent({
   content,
@@ -43,7 +44,8 @@ export default function BlogContent({
             );
 
           case "image":
-            return <img key={key} src={block.src} alt={block.alt || ""} />;
+            return <Image key={key} src={block.src} alt={block.alt || ""} />;
+          // return <img key={key} src={block.src} alt={block.alt || ""} />;
 
           default:
             return null;

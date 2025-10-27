@@ -1,14 +1,10 @@
 "use client";
 
 import React from "react";
-import { blogs } from "../page";
-import {
-  CaretLeftIcon,
-  ClockAfternoonIcon,
-  ClockIcon,
-} from "@phosphor-icons/react";
+import { CaretLeftIcon, ClockIcon } from "@phosphor-icons/react";
 import { useRouter } from "next/navigation";
 import BlogContent from "@/components/Blogs/renderBlogs";
+import { blogs } from "@/types/blog";
 
 interface IProps {
   params: Promise<{ slug: string }>;
