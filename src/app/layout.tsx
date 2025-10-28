@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${jetBrains.className} `}>
-        <div className="flex flex-col gap-10 max-w-5xl w-full h-screen justify-self-center px-5 md:px-10">
+        <div className="flex flex-col gap-10 max-w-5xl w-full h-screen justify-self-center px-5 md:px-10 cursor-default">
           <div className="flex justify-end ">
             <Navbar />
           </div>

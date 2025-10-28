@@ -47,19 +47,22 @@ const Work = () => {
         <h2 className="font-semibold">My Works</h2>
         <div className="flex flex-col my-20 gap-15">
           {workCards.map((workCard) => (
-            <a
+            <div
               key={workCard.title}
-              href={workCard.href}
-              target="_blank"
-              rel="noreferrer"
-              className="flex flex-col items-end"
+              className="flex flex-col justify-end items-end"
             >
-              <h1 className="uppercase font-thin">{workCard.title}</h1>
-
+              <a
+                key={workCard.title}
+                href={workCard.href}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <h1 className="uppercase font-thin">{workCard.title}</h1>
+              </a>
               <p className="opacity-70">
                 {workCard.timeline} / {workCard.work}
               </p>
-            </a>
+            </div>
           ))}
         </div>
       </div>

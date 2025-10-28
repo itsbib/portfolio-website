@@ -14,10 +14,18 @@ const testimonials: ITestimonials[] = [
     writtenBy: "Anup Subedi",
     writerDesc: "Founder, Mohoda",
   },
+  {
+    description:
+      "Bibek is a passionate and talented full-stack developer. His strong skills across UI/UX, React, Next.js, Node.js, MongoDB etc. combined with his creativity and problem-solving mindset, make him a valuable teammate. I highly recommend him for any project or team looking for a dedicated and innovative developer.",
+    writtenBy: "Gaurav Pyakurel",
+    writerDesc: "Frontend Dev",
+  },
 ];
 
 export default function Testimonials() {
-  const [index, setIndex] = useState(0);
+  const [index, setIndex] = useState(() =>
+    Math.floor(Math.random() * testimonials.length)
+  );
 
   const handleNext = () => setIndex((prev) => (prev + 1) % testimonials.length);
   const handlePrev = () =>

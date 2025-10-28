@@ -18,13 +18,12 @@ export default function Thoughts() {
 
       <div className="text-end flex flex-col gap-15 my-20">
         {blog.map((thought) => (
-          <div
-            className="cursor-pointer"
-            key={thought.title}
-            onClick={() => thought.slug && handleBlogsClick(thought.slug)}
-          >
+          <div key={thought.title}>
             <p className="subtext">{thought.writtenDate}</p>
-            <h3 className="justify-self-end line-clamp-1 font-normal">
+            <h3
+              onClick={() => thought.slug && handleBlogsClick(thought.slug)}
+              className="justify-self-end line-clamp-1 font-normal cursor-pointer"
+            >
               {thought.title}
             </h3>
             <p className="opacity-70 line-clamp-2">
