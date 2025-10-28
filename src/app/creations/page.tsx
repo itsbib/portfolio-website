@@ -29,13 +29,14 @@ export default function Creations() {
       <h2 className="font-semibold">Blogs</h2>
       <div className="flex flex-col my-15 gap-10">
         {blogs.map((blog) => (
-          <div
-            key={blog.slug}
-            onClick={() => blog.slug && handleBlogsClick(blog.slug)}
-            className="cursor-pointer flex flex-col items-end"
-          >
+          <div key={blog.slug} className="flex flex-col items-end w-auto">
             <p className="opacity-70">{blog.writtenDate}</p>
-            <h2 className="line-clamp-1">{blog.title}</h2>
+            <h2
+              className="line-clamp-1 cursor-pointer"
+              onClick={() => blog.slug && handleBlogsClick(blog.slug)}
+            >
+              {blog.title}
+            </h2>
             <p className="opacity-70 line-clamp-2">
               {blog.description.length > 80
                 ? `${blog.description.substring(0, 80)}...`
@@ -48,16 +49,20 @@ export default function Creations() {
       <h2 className="font-semibold">Videos</h2>
       <div className="flex flex-col my-15 gap-10">
         {contents.map((content) => (
-          <a
+          <div
             key={content.title}
-            href={content.link}
-            target="_blank"
-            rel="noreferrer"
-            className="flex flex-col items-end"
+            className="flex flex-col justify-end items-end"
           >
-            <h2 className="line-clamp-2">{content.title}</h2>
+            <a
+              key={content.title}
+              href={content.link}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <h2 className="line-clamp-2">{content.title}</h2>
+            </a>
             <p className="opacity-70">{content.description}</p>
-          </a>
+          </div>
         ))}
       </div>
     </div>
