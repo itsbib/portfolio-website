@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { JetBrains_Mono } from "next/font/google";
+import { Inconsolata } from "next/font/google";
 import "@/styles/globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-const jetBrains = JetBrains_Mono({
-  variable: "--font-jetbrains",
+const inconsolata = Inconsolata({
+  variable: "--font-inconsolata",
   subsets: ["latin"],
 });
 
@@ -24,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${jetBrains.className} `}>
+      <body className={`${inconsolata.className} `}>
         <div className="flex flex-col gap-10 max-w-5xl w-full h-screen justify-self-center px-5 md:px-10 cursor-default">
           <div className="flex justify-end ">
             <Navbar />

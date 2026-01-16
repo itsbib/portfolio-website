@@ -37,7 +37,7 @@ export default function BlogContent({
             return (
               <p
                 key={key}
-                className="text-justify whitespace-pre-line flex justify-center"
+                className="text-justify whitespace-pre-line flex justify-start"
               >
                 {block.text}
               </p>

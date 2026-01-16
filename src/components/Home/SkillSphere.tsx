@@ -68,6 +68,7 @@ const SkillSphere: React.FC<SkillSphereProps> = ({ radius }) => {
     });
 
     sphereRef.current.style.fontSize = "14px";
+    sphereRef.current.style.fontWeight = "bold";
     tagCloudInstanceRef.current = tagCloudInstance;
 
     return () => {
