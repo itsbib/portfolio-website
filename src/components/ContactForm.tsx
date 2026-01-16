@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 
 export default function ContactForm() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
@@ -39,7 +39,7 @@ export default function ContactForm() {
           placeholder="Enter your name"
           onChange={handleChange}
           required
-          className="flex-1 p-2 border border-white/10 rounded-lg md:placeholder:text-[14px] placeholder:text-[12px] focus:outline-none"
+          className="flex-1 p-2 border border-white/10 rounded-lg md:placeholder:text-[14px] placeholder:text-[12px] focus:outline-none font-[500]"
         />
         <input
           type="email"
@@ -47,7 +47,7 @@ export default function ContactForm() {
           placeholder="Enter your email"
           onChange={handleChange}
           required
-          className="flex-1 p-2 border border-white/10 rounded-lg md:placeholder:text-[14px] placeholder:text-[12px] focus:outline-none"
+          className="flex-1 p-2 border border-white/10 rounded-lg md:placeholder:text-[14px] placeholder:text-[12px] focus:outline-none font-[500]"
         />
       </div>
       <textarea
@@ -55,12 +55,12 @@ export default function ContactForm() {
         placeholder="Enter your message"
         onChange={handleChange}
         required
-        className="p-2 border border-white/10 rounded-lg w-full md:placeholder:text-[14px] placeholder:text-[12px] focus:outline-none min-h-40"
+        className="p-2 border border-white/10 rounded-lg w-full md:placeholder:text-[14px] placeholder:text-[12px] focus:outline-none min-h-40 font-[500]"
       ></textarea>
 
       <button
         type="submit"
-        className=" text-white py-2 border border-white/10 rounded-lg bg-white/5 text-[14px] cursor-pointer hover:bg-white/10"
+        className=" text-white py-2 border border-white/10 rounded-lg bg-white/5 text-[14px] cursor-pointer hover:bg-white/10 font-[500]"
       >
         Send Message
       </button>
