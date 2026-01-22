@@ -21,9 +21,15 @@ const workCards: IWorkCard[] = [
     href: "https://www.mohoda.com",
   },
   {
+    title: "en-ne bidirectional",
+    work: "ASR & Speech Translation",
+    timeline: "March 2025",
+    href: "https://huggingface.co/itsbib/nepali-english-bidirectional",
+  },
+  {
     title: "Legalize Nepal",
     work: "Design & Dev",
-    timeline: "March 2025",
+    timeline: "October 2024",
     href: "https://www.legalizenepalofficial.com",
   },
   {
@@ -60,7 +66,7 @@ const Work = () => {
                 <h1 className="uppercase font-thin">{workCard.title}</h1>
               </a>
               <p className="opacity-70">
-                {workCard.timeline} / {workCard.work}
+                {workCard.timeline} . {workCard.work}
               </p>
             </div>
           ))}
